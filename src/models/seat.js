@@ -4,9 +4,9 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const seatSchema = new Schema({
-  type: String,
+  section: String,
   price: Number,
-  isPurchased: Boolean,
+  isPurchased: { type: Boolean, default: false },
   venue: { type: mongoose.Schema.ObjectId, ref: 'Venue' },
 });
 
