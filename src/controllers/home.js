@@ -1,6 +1,8 @@
 /* eslint-disable new-cap */
 
 import express from 'express';
+import Venue from '../models/venue';
+import Seat from '../models/seat';
 const router = module.exports = express.Router();
 
 router.get('/', (req, res) => {
