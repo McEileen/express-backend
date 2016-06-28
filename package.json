@@ -2,12 +2,19 @@
   "name": "template",
   "version": "1.0.3",
   "scripts": {
-    "dev": "DB=changeme LEVEL=silly PORT=3333 nodemon dst/server.js"
+    "dev": "DB=express_backend LEVEL=silly PORT=3310 nodemon dst/server.js"
   },
-  "author": "Chyld Medford",
+  "author": "Eileen & Rich",
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.2",
+    "pug": "^2.0.0-beta3",
+    "request": "^2.72.0",
+    "winston": "^2.2.0"
   }
 }
