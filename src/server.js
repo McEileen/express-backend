@@ -24,12 +24,13 @@ app.use(express.static(path.join(__dirname, '../static')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 3310;
 
 app.listen(port, () => {
   logger.log('info', '[EXPRESS] - listening port: %d', port);
 });
 
 app.use('/', require('./controllers/home'));
+app.use('/seats', require('./controllers/seats'));
 
 module.exports = app;

@@ -27,4 +27,4 @@ watch: all
 	@echo [watch]
 	@$(BIN)/chokidar 'src/**/*.js' 'test/**/*.js' -c 'make all'
 
-all: main clean compile lint tests
+all: main clean compile  tests
